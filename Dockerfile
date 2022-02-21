@@ -7,7 +7,6 @@ RUN apt update \
   && wget -O /frpc "https://raw.githubusercontent.com/jzl1/huochetou/main/frpc" \
   && wget -O /start.sh "https://raw.githubusercontent.com/jzl1/huochetou/main/start.sh" \
   && echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config \
-  && echo root:qP7x98MVHW|chpasswd \
   && tar xvf /agent.tar.gz \
   && rm -rf /agent.tar.gz \
   && chmod 755 /nezha-agent \
