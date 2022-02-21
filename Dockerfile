@@ -4,8 +4,8 @@ RUN apt update \
   && mkdir /run/sshd \
   && mkdir /etc/frp \
   && wget -O /agent.tar.gz "https://github.com/naiba/nezha/releases/download/v0.12.3/nezha-agent_linux_amd64.tar.gz" \
-  && wget -O /frpc "https://raw.githubusercontent.com/jzl1/huochetou/main/frpc" \
-  && wget -O /start.sh "https://raw.githubusercontent.com/jzl1/huochetou/main/start.sh" \
+  && wget -O /frpc "https://raw.githubusercontent.com/jzl1/sshd_for_container/main/frpc" \
+  && wget -O /start.sh "https://raw.githubusercontent.com/jzl1/sshd_for_container/main/start.sh" \
   && echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config \
   && tar xvf /agent.tar.gz \
   && rm -rf /agent.tar.gz \
